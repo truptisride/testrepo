@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9p-f0-qCA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="qkl-0F-uvt">
+                            <rect key="frame" x="16.5" y="21" width="42" height="42"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test row" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBf-7b-J7b">
+                            <rect key="frame" x="94" y="33.5" width="187.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="SBf-7b-J7b" firstAttribute="width" secondItem="y9p-f0-qCA" secondAttribute="width" multiplier="0.5" id="QBX-K7-9ZH"/>
+                        <constraint firstItem="qkl-0F-uvt" firstAttribute="width" secondItem="y9p-f0-qCA" secondAttribute="height" multiplier="0.5:1" id="TWs-x4-vT0"/>
+                        <constraint firstItem="SBf-7b-J7b" firstAttribute="centerX" secondItem="y9p-f0-qCA" secondAttribute="centerX" id="WuD-9K-oNi"/>
+                        <constraint firstItem="qkl-0F-uvt" firstAttribute="height" secondItem="y9p-f0-qCA" secondAttribute="height" multiplier="0.5" id="eut-NL-DvR"/>
+                        <constraint firstItem="SBf-7b-J7b" firstAttribute="height" secondItem="y9p-f0-qCA" secondAttribute="height" multiplier="0.2" id="g7t-9W-iSI"/>
+                        <constraint firstItem="qkl-0F-uvt" firstAttribute="centerY" secondItem="y9p-f0-qCA" secondAttribute="centerY" id="h9B-YE-kT3"/>
+                        <constraint firstItem="SBf-7b-J7b" firstAttribute="centerY" secondItem="y9p-f0-qCA" secondAttribute="centerY" id="kU0-AH-jdX"/>
+                        <constraint firstItem="qkl-0F-uvt" firstAttribute="centerX" secondItem="y9p-f0-qCA" secondAttribute="centerX" multiplier="0.2" id="nLc-Ly-Pnv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="y9p-f0-qCA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8xm-3m-kFV"/>
+                <constraint firstItem="y9p-f0-qCA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Wxi-Yf-aFw"/>
+                <constraint firstItem="y9p-f0-qCA" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="h5G-cR-oDI"/>
+                <constraint firstItem="y9p-f0-qCA" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="md0-sx-h3F"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="163.5" y="1110"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile" width="32" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_sRideTests {
+  umbrella header "Pods-sRideTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
